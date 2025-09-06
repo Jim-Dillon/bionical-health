@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" viewBox="0 0 31 31">
+  <defs>
+    <filter id="Ellipse_4" x="0" y="0" width="31" height="31" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Button_-_Hoover_-_Click" data-name="Button - Hoover - Click" transform="translate(3 2)">
+    <g id="Button" transform="translate(-1004 -840)">
+      <g transform="matrix(1, 0, 0, 1, 1001, 838)" filter="url(#Ellipse_4)">
+        <circle id="Ellipse_4-2" data-name="Ellipse 4" cx="12.5" cy="12.5" r="12.5" transform="translate(28 2) rotate(90)" fill="#fff"/>
+      </g>
+      <g id="Group_33" data-name="Group 33">
+        <line id="Line_10" data-name="Line 10" y2="12.917" transform="translate(1022.635 852.5) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+        <line id="Line_11" data-name="Line 11" y1="4.521" x2="4.521" transform="translate(1022.635 847.979) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+        <line id="Line_12" data-name="Line 12" x1="4.521" y1="4.521" transform="translate(1022.635 852.5) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
