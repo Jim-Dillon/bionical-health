@@ -226,6 +226,12 @@
   .mb-2\.5 {
     margin-bottom: calc(var(--spacing) * 2.5);
   }
+  .-ml-\[10px\] {
+    margin-left: calc(10px * -1);
+  }
+  .ml-\[10px\] {
+    margin-left: 10px;
+  }
   .flex {
     display: flex;
   }
@@ -346,6 +352,9 @@
   .text-center {
     text-align: center;
   }
+  .align-super {
+    vertical-align: super;
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -357,6 +366,9 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[28px\] {
+    font-size: 28px;
   }
   .text-\[62px\] {
     font-size: 62px;
