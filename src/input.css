@@ -3,4 +3,5 @@
 /* Optional: make Roboto font default */
 body {
   font-family: "Roboto", sans-serif;
+  color: #000000;
 }
