@@ -168,20 +168,8 @@
   }
 }
 @layer utilities {
-  .bg-amber-50 {
-    background-color: var(--color-amber-50);
-  }
   .bg-red-100 {
     background-color: var(--color-red-100);
-  }
-  .bg-red-300 {
-    background-color: var(--color-red-300);
-  }
-  .bg-red-400 {
-    background-color: var(--color-red-400);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -197,6 +185,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  color: #000000;
 }
 @property --tw-font-weight {
   syntax: "*";
