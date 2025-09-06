@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
 /* Optional: make Roboto font default */
-body {
+
+html {
   font-family: "Roboto", sans-serif;
   color: #000000;
+  scroll-behavior: smooth;
 }
