@@ -791,6 +791,18 @@ html {
 .cards-grid {
   display: grid;
 }
+@media only screen and (max-width: 640px) {
+  .cards-stack {
+    gap: 28px;
+  }
+  .cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
 .card--h {
   max-width: 720px;
   height: 190px;
@@ -859,16 +871,6 @@ html {
   align-self: flex-end;
 }
 @media only screen and (max-width: 640px) {
-  .cards-stack {
-    gap: 28px;
-  }
-  .cards-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    max-width: 400px;
-    margin: 0 auto;
-  }
   .card--v {
     max-width: 100%;
     height: auto;
