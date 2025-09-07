@@ -210,6 +210,9 @@
   .mt-\[16px\] {
     margin-top: 16px;
   }
+  .mt-\[20px\] {
+    margin-top: 20px;
+  }
   .mt-\[38px\] {
     margin-top: 38px;
   }
@@ -222,11 +225,17 @@
   .mb-1\.5 {
     margin-bottom: calc(var(--spacing) * 1.5);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .mb-\[36px\] {
     margin-bottom: 36px;
   }
   .mb-\[78px\] {
     margin-bottom: 78px;
+  }
+  .-ml-\[5px\] {
+    margin-left: calc(5px * -1);
   }
   .-ml-\[10px\] {
     margin-left: calc(10px * -1);
@@ -409,6 +418,9 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
   }
@@ -493,11 +505,17 @@
   .text-\[12px\] {
     font-size: 12px;
   }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
   .text-\[28px\] {
     font-size: 28px;
   }
   .text-\[32px\] {
     font-size: 32px;
+  }
+  .text-\[34px\] {
+    font-size: 34px;
   }
   .text-\[62px\] {
     font-size: 62px;
@@ -513,6 +531,10 @@
   .leading-\[26px\] {
     --tw-leading: 26px;
     line-height: 26px;
+  }
+  .leading-\[43px\] {
+    --tw-leading: 43px;
+    line-height: 43px;
   }
   .leading-\[50px\] {
     --tw-leading: 50px;
@@ -563,6 +585,67 @@
       @media (hover: hover) {
         text-decoration-line: underline;
       }
+    }
+  }
+  .sm\:mt-\[16px\] {
+    @media (width >= 40rem) {
+      margin-top: 16px;
+    }
+  }
+  .sm\:mb-0 {
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:-ml-\[10px\] {
+    @media (width >= 40rem) {
+      margin-left: calc(10px * -1);
+    }
+  }
+  .sm\:max-w-\[902px\] {
+    @media (width >= 40rem) {
+      max-width: 902px;
+    }
+  }
+  .sm\:max-w-\[990px\] {
+    @media (width >= 40rem) {
+      max-width: 990px;
+    }
+  }
+  .sm\:justify-start {
+    @media (width >= 40rem) {
+      justify-content: flex-start;
+    }
+  }
+  .sm\:px-0 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:px-7 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 7);
+    }
+  }
+  .sm\:px-\[79px\] {
+    @media (width >= 40rem) {
+      padding-inline: 79px;
+    }
+  }
+  .sm\:text-\[28px\] {
+    @media (width >= 40rem) {
+      font-size: 28px;
+    }
+  }
+  .sm\:text-\[62px\] {
+    @media (width >= 40rem) {
+      font-size: 62px;
+    }
+  }
+  .sm\:leading-\[68px\] {
+    @media (width >= 40rem) {
+      --tw-leading: 68px;
+      line-height: 68px;
     }
   }
   .md\:flex-row {
