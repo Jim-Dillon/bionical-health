@@ -106,7 +106,6 @@ html {
 .cards-stack {
   display: flex;
   flex-direction: column;
-  gap: 38px;
 }
 
 .cards-grid {
@@ -119,8 +118,6 @@ html {
   }
 
   .cards-grid {
-    display: flex;
-    flex-direction: column;
     gap: 28px;
     max-width: 400px;
     margin: 0 auto;
