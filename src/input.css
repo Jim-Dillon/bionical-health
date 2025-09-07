@@ -123,6 +123,40 @@ html {
   gap: 16px;
 }
 
+@media only screen and (max-width: 640px) {
+  .card--h {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card--h .card-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .card--h .card-inner {
+    flex-direction: column;
+  }
+
+  .card--h .card-content {
+    flex-direction: column;
+  }
+
+  .card--h .cta-container {
+    justify-content: end;
+  }
+
+  .card--h .arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card--h .arrow-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 /* Vertical Card Styles */
 
 .card--v {
@@ -157,10 +191,6 @@ html {
   display: flex;
   flex-direction: column;
   gap: 38px;
-}
-
-.section-offset {
-  margin-top: -46px;
 }
 
 .cards-grid {
