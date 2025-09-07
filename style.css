@@ -229,8 +229,14 @@
   .mb-\[36px\] {
     margin-bottom: 36px;
   }
-  .mb-\[78px\] {
-    margin-bottom: 78px;
+  .mb-\[40px\] {
+    margin-bottom: 40px;
+  }
+  .mb-\[50px\] {
+    margin-bottom: 50px;
+  }
+  .mb-\[60px\] {
+    margin-bottom: 60px;
   }
   .-ml-\[5px\] {
     margin-left: calc(5px * -1);
@@ -506,6 +512,11 @@
       margin-top: 16px;
     }
   }
+  .sm\:mb-\[78px\] {
+    @media (width >= 40rem) {
+      margin-bottom: 78px;
+    }
+  }
   .sm\:-ml-\[10px\] {
     @media (width >= 40rem) {
       margin-left: calc(10px * -1);
@@ -650,6 +661,16 @@ html {
   z-index: 20;
   pointer-events: none;
 }
+.cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 38px;
+}
 .card--h {
   max-width: 720px;
   height: 190px;
@@ -716,15 +737,30 @@ html {
   margin-top: auto;
   align-self: flex-end;
 }
-.cards-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 38px;
-}
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 38px;
+@media only screen and (max-width: 640px) {
+  .cards-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .card--v {
+    max-width: 100%;
+    height: auto;
+    min-height: auto;
+  }
+  .card--v .card-inner {
+    min-height: 370px;
+  }
+  .card--v .card-image {
+    height: 200px;
+  }
+  .card--v .arrow {
+    width: 30px;
+    height: 30px;
+  }
+  .card--v .arrow-icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 .back-top-button .arrow {
   width: 48px;
