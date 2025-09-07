@@ -180,8 +180,20 @@
   .relative {
     position: relative;
   }
+  .-right-\[1\%\] {
+    right: calc(1% * -1);
+  }
   .-right-\[100px\] {
     right: calc(100px * -1);
+  }
+  .-right-\[140px\] {
+    right: calc(140px * -1);
+  }
+  .right-\[20px\] {
+    right: 20px;
+  }
+  .right-\[40px\] {
+    right: 40px;
   }
   .right-\[107px\] {
     right: 107px;
@@ -192,8 +204,14 @@
   .bottom-82 {
     bottom: calc(var(--spacing) * 82);
   }
+  .bottom-\[20px\] {
+    bottom: 20px;
+  }
   .bottom-\[82px\] {
     bottom: 82px;
+  }
+  .bottom-\[85px\] {
+    bottom: 85px;
   }
   .z-10 {
     z-index: 10;
