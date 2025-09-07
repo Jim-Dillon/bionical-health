@@ -171,8 +171,29 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
+  }
+  .-right-\[100px\] {
+    right: calc(100px * -1);
+  }
+  .right-\[107px\] {
+    right: 107px;
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .bottom-82 {
+    bottom: calc(var(--spacing) * 82);
+  }
+  .bottom-\[82px\] {
+    bottom: 82px;
   }
   .z-10 {
     z-index: 10;
@@ -204,6 +225,9 @@
   .mt-\[52px\] {
     margin-top: 52px;
   }
+  .mb-\[36px\] {
+    margin-bottom: 36px;
+  }
   .mb-\[78px\] {
     margin-bottom: 78px;
   }
@@ -233,9 +257,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-\[720px\] {
-    max-width: 720px;
   }
   .max-w-\[735px\] {
     max-width: 735px;
@@ -495,7 +516,7 @@ html {
 }
 .card--v {
   width: 100%;
-  height: auto;
+  min-height: 370px;
 }
 .card--v .card-inner {
   flex-direction: column;
@@ -526,9 +547,6 @@ html {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 38px;
-}
-.cards-stack-gap {
-  margin-top: 38px;
 }
 @property --tw-rotate-x {
   syntax: "*";
