@@ -203,6 +203,7 @@ html {
   .cards-grid {
     display: flex;
     flex-direction: column;
+    gap: 28px;
   }
 
   .card--v {
