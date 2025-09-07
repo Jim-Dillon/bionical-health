@@ -101,6 +101,20 @@ html {
   pointer-events: none;
 }
 
+/* Grid for 3 vertical cards */
+
+.cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 38px;
+}
+
 /* Horizontal Card Styles */
 
 .card--h {
@@ -185,18 +199,35 @@ html {
   align-self: flex-end;
 }
 
-/* Grid for 3 vertical cards */
+@media only screen and (max-width: 640px) {
+  .cards-grid {
+    display: flex;
+    flex-direction: column;
+  }
 
-.cards-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 38px;
-}
+  .card--v {
+    max-width: 100%;
+    height: auto;
+    min-height: auto;
+  }
 
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 38px;
+  .card--v .card-inner {
+    min-height: 370px;
+  }
+
+  .card--v .card-image {
+    height: 200px;
+  }
+
+  .card--v .arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card--v .arrow-icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /* Back to Top Button */
