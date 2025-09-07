@@ -238,6 +238,9 @@
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -535,11 +538,6 @@
       margin-left: calc(10px * -1);
     }
   }
-  .sm\:grid {
-    @media (width >= 40rem) {
-      display: grid;
-    }
-  }
   .sm\:max-w-\[902px\] {
     @media (width >= 40rem) {
       max-width: 902px;
@@ -685,6 +683,11 @@
       padding-inline: calc(var(--spacing) * 5);
     }
   }
+  .md\:px-6 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
   .md\:px-7 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 7);
@@ -786,7 +789,6 @@ html {
 .cards-stack {
   display: flex;
   flex-direction: column;
-  gap: 38px;
 }
 .cards-grid {
   display: grid;
@@ -796,8 +798,6 @@ html {
     gap: 28px;
   }
   .cards-grid {
-    display: flex;
-    flex-direction: column;
     gap: 28px;
     max-width: 400px;
     margin: 0 auto;
