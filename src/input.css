@@ -7,3 +7,95 @@ html {
   color: #000000;
   scroll-behavior: smooth;
 }
+
+/* =========================
+   STYLE FOR RESUABLE CARDS
+   ========================= */
+
+/* Horizontal Cards */
+
+.hori-card {
+  display: block;
+  margin: 0 auto;
+  max-width: 720px;
+  height: 190px;
+  background-color: #f3ebe6;
+  border-radius: 14px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  transform: translateZ(0);
+  transition: transform 200ms ease-out;
+}
+
+.hori-card:hover {
+  transform: scale(1.014);
+}
+
+.hori-card-inner {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.hori-card-image {
+  width: 252px;
+  flex: 0 0 252px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hori-card-content {
+  flex: 1 1 auto;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.hori-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hori-card-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.hori-card-desc {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 300;
+}
+
+.arrow {
+  position: relative;
+  width: 29px;
+  height: 29px;
+  border-radius: 9999px;
+  overflow: hidden;
+  background-color: #fff;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.16));
+}
+.arrow-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #eed6d4;
+  transform: translateX(-100%);
+  transition: transform 300ms ease-out;
+  z-index: 10;
+}
+
+.hori-card:hover .arrow-overlay {
+  transform: translateX(0);
+}
+
+.arrow-icon {
+  position: absolute;
+  inset: 0;
+  width: 29px;
+  height: 29px;
+  z-index: 20;
+  pointer-events: none;
+}

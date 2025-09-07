@@ -58,37 +58,30 @@
   <section>
 
     <!-- 'Welcome to' Section -->
-    <div class="mx-auto max-w-[990px] mt-12 space-y-6">
+    <div class="mx-auto max-w-[904px]">
 
-      <a href="#" class="group block mx-auto max-w-[720px] h-[190px] bg-[#F3EBE6] rounded-[14px] shadow-[0px_3px_6px_rgba(0,0,0,0.16)] overflow-visible transform-gpu transition-transform duration-200 ease-out hover:scale-[1.014]">
-        <div class="flex h-full overflow-hidden rounded-[14px]">
-          <!-- Image side -->
-          <div class="w-[252px] flex-none bg-cover bg-center" 
-         style="background-image: url('./assets/cards/smile.png')" 
-         title="Welcome Card Image"></div>
+      <a href="#" class="hori-card">
+        <div class="hori-card-inner">
 
-          <!-- Content side -->
-          <div class="flex-1 p-6 flex items-stretch justify-between gap-4">
-            <div class="flex flex-col justify-center">
-              <h3 class="text-xl leading-[26px] font-medium text-black mb-2">
+          <div class="hori-card-image"
+              style="background-image: url('./assets/cards/smile.png')"
+              title="Welcome Card Image"></div>
+
+          <div class="hori-card-content">
+            <div class="hori-card-text">
+              <h3 class="hori-card-title">
                 Welcome to Ebglyss® (lebrikizumab) Emotional Wellbeing Programme
               </h3>
-              <p class="text-base leading-[21px] font-light text-black">
+              <p class="hori-card-desc">
                 Information to help you understand more about this programme and what to expect.
               </p>
             </div>
 
             <div class="flex h-full items-end">
-              <div class="relative w-[29px] h-[29px] rounded-full overflow-hidden
-                          bg-white drop-shadow-[0_3px_6px_rgba(0,0,0,0.16)]">
-                <!-- sliding overlay -->
-                <span class="absolute inset-0 bg-[#EED6D4]
-                            -translate-x-full group-hover:translate-x-0
-                            transition-transform duration-300 ease-out z-10"></span>
-
-                <!-- arrow only -->
-                <svg class="absolute inset-0 w-[29px] h-[29px] text-black z-20 pointer-events-none"
-                    viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <div class="arrow">
+                <span class="arrow-overlay"></span>
+                <svg class="arrow-icon" viewBox="0 0 29 29" fill="none" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg">
                   <path d="M20.635 13.5H7.71801" stroke="currentColor" stroke-linecap="round"/>
                   <path d="M16.114 8.979L20.635 13.5" stroke="currentColor" stroke-linecap="round"/>
                   <path d="M16.114 18.021L20.635 13.5" stroke="currentColor" stroke-linecap="round"/>
