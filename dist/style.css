@@ -11,9 +11,12 @@
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --font-weight-light: 300;
+    --font-weight-medium: 500;
     --leading-snug: 1.375;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -186,11 +189,23 @@
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
+  .mt-\[12px\] {
+    margin-top: 12px;
+  }
   .mt-\[16px\] {
     margin-top: 16px;
   }
+  .mt-\[38px\] {
+    margin-top: 38px;
+  }
+  .mt-\[52px\] {
+    margin-top: 52px;
+  }
   .-ml-\[10px\] {
     margin-left: calc(10px * -1);
+  }
+  .contents {
+    display: contents;
   }
   .flex {
     display: flex;
@@ -213,6 +228,15 @@
   .w-full {
     width: 100%;
   }
+  .max-w-\[720px\] {
+    max-width: 720px;
+  }
+  .max-w-\[735px\] {
+    max-width: 735px;
+  }
+  .max-w-\[856px\] {
+    max-width: 856px;
+  }
   .max-w-\[902px\] {
     max-width: 902px;
   }
@@ -224,6 +248,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .items-center {
     align-items: center;
@@ -288,6 +315,10 @@
   .align-super {
     vertical-align: super;
   }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -299,6 +330,9 @@
   .text-\[28px\] {
     font-size: 28px;
   }
+  .text-\[32px\] {
+    font-size: 32px;
+  }
   .text-\[62px\] {
     font-size: 62px;
   }
@@ -306,9 +340,17 @@
     --tw-leading: 19px;
     line-height: 19px;
   }
+  .leading-\[21px\] {
+    --tw-leading: 21px;
+    line-height: 21px;
+  }
   .leading-\[26px\] {
     --tw-leading: 26px;
     line-height: 26px;
+  }
+  .leading-\[50px\] {
+    --tw-leading: 50px;
+    line-height: 50px;
   }
   .leading-\[68px\] {
     --tw-leading: 68px;
@@ -321,6 +363,10 @@
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .tracking-\[-1\.86px\] {
     --tw-tracking: -1.86px;
