@@ -116,7 +116,7 @@ html {
 
 .card--v {
   width: 100%;
-  height: auto;
+  min-height: 370px;
 }
 
 .card--v .card-inner {
@@ -156,9 +156,4 @@ html {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 38px;
-}
-
-/* Spacing between cards */
-.cards-stack-gap {
-  margin-top: 38px;
 }
