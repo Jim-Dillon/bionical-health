@@ -409,6 +409,9 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
+  }
   .px-\[79px\] {
     padding-inline: 79px;
   }
@@ -468,6 +471,27 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[4px\] {
+    font-size: 4px;
+  }
+  .text-\[6px\] {
+    font-size: 6px;
+  }
+  .text-\[7px\] {
+    font-size: 7px;
+  }
+  .text-\[8px\] {
+    font-size: 8px;
+  }
+  .text-\[9px\] {
+    font-size: 9px;
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[12px\] {
+    font-size: 12px;
   }
   .text-\[28px\] {
     font-size: 28px;
