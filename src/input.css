@@ -200,6 +200,10 @@ html {
 }
 
 @media only screen and (max-width: 640px) {
+  .cards-stack {
+    gap: 28px;
+  }
+
   .cards-grid {
     display: flex;
     flex-direction: column;
