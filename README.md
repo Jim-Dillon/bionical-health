@@ -2,6 +2,8 @@
 
 A task to build a responsive medical landing page consisting of various types of information, from static text and images to reusable blog cards.
 
+Page can be found here - https://jim-dillon.github.io/bionical-health/
+
 ## Usage
 
 1. Clone this repo - `git clone https://github.com/Jim-Dillon/bionical-health.git`
