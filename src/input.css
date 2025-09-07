@@ -63,7 +63,7 @@ html {
   position: relative;
   width: 25px;
   height: 25px;
-  border-radius: 9999px;
+  border-radius: 50%;
   overflow: hidden;
   background-color: #fff;
   filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.16));
@@ -72,13 +72,24 @@ html {
   position: absolute;
   inset: 0;
   background-color: #eed6d4;
-  transform: translateX(-100%);
   transition: transform 0.3s ease-out;
   z-index: 10;
 }
 
-.card:hover .arrow-overlay {
+.arrow--slide-left .arrow-overlay {
+  transform: translateX(-100%);
+}
+
+.arrow--slide-top .arrow-overlay {
+  transform: translateY(-100%);
+}
+
+.card:hover .arrow--slide-left .arrow-overlay {
   transform: translateX(0);
+}
+
+.back-top-button:hover .arrow--slide-top .arrow-overlay {
+  transform: translateY(0);
 }
 
 .arrow-icon {
@@ -156,4 +167,36 @@ html {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 38px;
+}
+
+/* Back to Top Button */
+
+.back-top-button .arrow {
+  width: 48px;
+  height: 48px;
+}
+
+.up-arrow-icon {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 20;
+}
+
+.up-arrow-bg {
+  fill: #fff;
+}
+
+.up-arrow-stroke {
+  stroke: black;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.back-top-button:hover .up-arrow-bg {
+  fill: #eed6d4;
+}
+
+.back-top-button:hover p {
+  font-weight: 400;
 }

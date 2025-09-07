@@ -174,41 +174,11 @@
   .absolute {
     position: absolute;
   }
-  .fixed {
-    position: fixed;
-  }
   .relative {
     position: relative;
   }
-  .-right-\[1\%\] {
-    right: calc(1% * -1);
-  }
-  .-right-\[100px\] {
-    right: calc(100px * -1);
-  }
-  .-right-\[140px\] {
-    right: calc(140px * -1);
-  }
-  .right-\[20px\] {
-    right: 20px;
-  }
   .right-\[40px\] {
     right: 40px;
-  }
-  .right-\[107px\] {
-    right: 107px;
-  }
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
-  }
-  .bottom-82 {
-    bottom: calc(var(--spacing) * 82);
-  }
-  .bottom-\[20px\] {
-    bottom: 20px;
-  }
-  .bottom-\[82px\] {
-    bottom: 82px;
   }
   .bottom-\[85px\] {
     bottom: 85px;
@@ -242,6 +212,9 @@
   }
   .mt-\[52px\] {
     margin-top: 52px;
+  }
+  .mb-1\.5 {
+    margin-bottom: calc(var(--spacing) * 1.5);
   }
   .mb-\[36px\] {
     margin-bottom: 36px;
@@ -490,7 +463,7 @@ html {
   position: relative;
   width: 25px;
   height: 25px;
-  border-radius: 9999px;
+  border-radius: 50%;
   overflow: hidden;
   background-color: #fff;
   filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.16));
@@ -499,12 +472,20 @@ html {
   position: absolute;
   inset: 0;
   background-color: #eed6d4;
-  transform: translateX(-100%);
   transition: transform 0.3s ease-out;
   z-index: 10;
 }
-.card:hover .arrow-overlay {
+.arrow--slide-left .arrow-overlay {
+  transform: translateX(-100%);
+}
+.arrow--slide-top .arrow-overlay {
+  transform: translateY(-100%);
+}
+.card:hover .arrow--slide-left .arrow-overlay {
   transform: translateX(0);
+}
+.back-top-button:hover .arrow--slide-top .arrow-overlay {
+  transform: translateY(0);
 }
 .arrow-icon {
   position: absolute;
@@ -565,6 +546,30 @@ html {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 38px;
+}
+.back-top-button .arrow {
+  width: 48px;
+  height: 48px;
+}
+.up-arrow-icon {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 20;
+}
+.up-arrow-bg {
+  fill: #fff;
+}
+.up-arrow-stroke {
+  stroke: black;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.back-top-button:hover .up-arrow-bg {
+  fill: #eed6d4;
+}
+.back-top-button:hover p {
+  font-weight: 400;
 }
 @property --tw-rotate-x {
   syntax: "*";
