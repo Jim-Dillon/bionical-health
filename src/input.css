@@ -12,58 +12,50 @@ html {
    STYLE FOR RESUABLE CARDS
    ========================= */
 
-/* Horizontal Cards */
+/* Base Card Styles */
 
-.hori-card {
+.card {
   display: block;
   margin: 0 auto;
-  max-width: 720px;
-  height: 190px;
-  background-color: #f3ebe6;
+  background: #f3ebe6;
   border-radius: 14px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   transform: translateZ(0);
-  transition: transform 200ms ease-out;
+  transition: transform 0.2s ease-out;
 }
 
-.hori-card:hover {
+.card:hover {
   transform: scale(1.014);
 }
 
-.hori-card-inner {
+.card-inner {
   display: flex;
   height: 100%;
   overflow: hidden;
   border-radius: 14px;
 }
 
-.hori-card-image {
-  width: 252px;
-  flex: 0 0 252px;
+.card-image {
   background-size: cover;
   background-position: center;
 }
 
-.hori-card-content {
-  flex: 1 1 auto;
-  padding: 1.5rem;
+.card-content {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
 }
 
-.hori-card-text {
+.card-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.hori-card-title {
+.card-title {
   font-size: 20px;
   line-height: 26px;
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 11px;
 }
-.hori-card-desc {
+.card-desc {
   font-size: 16px;
   line-height: 21px;
   font-weight: 300;
@@ -71,8 +63,8 @@ html {
 
 .arrow {
   position: relative;
-  width: 29px;
-  height: 29px;
+  width: 25px;
+  height: 25px;
   border-radius: 9999px;
   overflow: hidden;
   background-color: #fff;
@@ -83,19 +75,92 @@ html {
   inset: 0;
   background-color: #eed6d4;
   transform: translateX(-100%);
-  transition: transform 300ms ease-out;
+  transition: transform 0.3s ease-out;
   z-index: 10;
 }
 
-.hori-card:hover .arrow-overlay {
+.card:hover .arrow-overlay {
   transform: translateX(0);
 }
 
 .arrow-icon {
   position: absolute;
   inset: 0;
-  width: 29px;
-  height: 29px;
+  width: 25px;
+  height: 25px;
   z-index: 20;
   pointer-events: none;
+}
+
+/* Horizontal Card Styles */
+
+.card--h {
+  max-width: 720px;
+  height: 190px;
+}
+
+.card--h .card-inner {
+  flex-direction: row;
+}
+.card--h .card-image {
+  width: 252px;
+  flex: 0 0 252px;
+}
+.card--h .card-content {
+  flex: 1 1 auto;
+  padding: 24px 14px 14px 24px;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* Vertical Card Styles */
+
+.card--v {
+  width: 100%;
+  height: auto;
+}
+
+.card--v .card-inner {
+  flex-direction: column;
+}
+
+.card--v .card-image {
+  width: 100%;
+  height: 129px;
+}
+
+.card--v .card-content {
+  flex: 1 1 auto;
+  padding: 22px 12px 12px 22px;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card--v .card-cta {
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+/* Grid for 3 vertical cards */
+
+.cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.section-offset {
+  margin-top: -46px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 38px;
+}
+
+/* Spacing between cards */
+.cards-stack-gap {
+  margin-top: 38px;
 }
