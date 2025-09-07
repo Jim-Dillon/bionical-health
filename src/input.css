@@ -1,10 +1,14 @@
 @import "tailwindcss";
 
+/* Evergreen Styles */
+
 html {
   font-family: "Roboto", sans-serif;
   color: #000000;
   scroll-behavior: smooth;
 }
+
+/* Container Styles */
 
 /* =========================
    STYLE FOR RESUABLE CARDS
@@ -59,6 +63,8 @@ html {
   font-weight: 300;
 }
 
+/* Card Arrows */
+
 .arrow {
   position: relative;
   width: 25px;
@@ -101,7 +107,7 @@ html {
   pointer-events: none;
 }
 
-/* Grid for 3 vertical cards */
+/* Card Grid Styles */
 
 .cards-stack {
   display: flex;
@@ -111,6 +117,20 @@ html {
 
 .cards-grid {
   display: grid;
+}
+
+@media only screen and (max-width: 640px) {
+  .cards-stack {
+    gap: 28px;
+  }
+
+  .cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
 
 /* Horizontal Card Styles */
@@ -199,18 +219,6 @@ html {
 }
 
 @media only screen and (max-width: 640px) {
-  .cards-stack {
-    gap: 28px;
-  }
-
-  .cards-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
   .card--v {
     max-width: 100%;
     height: auto;
