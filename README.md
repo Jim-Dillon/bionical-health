@@ -15,6 +15,8 @@ Page can be found here - https://jim-dillon.github.io/bionical-health/
 
 This was the first time I worked with Tailwind in a project as I'd previously used regular CSS or SCSS. I've tried to use it as much as possible, but there were some instances with lots of repeated components, like the blog cards, where I didn't want to repeat large chunks of inline styles, so I created some traditional CSS rulesets to keep the markup a bit cleaner. I hope that with more exposure to Tailwind that I could optimise the code even further.
 
+In the [Tailwind docs](https://v1.tailwindcss.com/components/cards) they had some out-the-box code ready for a similar-looking blog card, so to save time I've used the structure of the code and customised it to match the design.
+
 This was also the first time I've built anything from XD, as I'd only used Figma and Sketch up to this point.
 
 ## Things I might do diffferently
